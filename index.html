@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ynote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div id="sidebar-header">
+        <h1>ynote</h1>
+        <button id="new-note-btn" title="New note">+</button>
+      </div>
+      <ul id="note-list"></ul>
+    </aside>
+    <main id="editor-panel">
+      <div id="editor-toolbar">
+        <span id="note-date"></span>
+        <button id="delete-note-btn" title="Delete note">Delete</button>
+      </div>
+      <textarea id="editor" placeholder="Start typing…"></textarea>
+      <div id="empty-state">
+        <p>No note selected.</p>
+        <button id="empty-new-btn">Create a note</button>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
